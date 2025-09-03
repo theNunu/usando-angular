@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 import { RouterLink, RouterOutlet } from '@angular/router';
 @Component({
     selector: "mis-rutas",
-    imports: [CommonModule],
+    imports: [CommonModule, RouterLink],
     templateUrl: './mis-rutas.component.html'
 
 })
