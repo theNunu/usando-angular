@@ -1,1 +1,41 @@
-<p>fourth-thing works!</p>
+<h1 class="font-bold text-3xl">fourth-thing works!</h1>
+
+
+<h2 class="font-light text-2xl">Primer Formulario </h2>
+
+<form [formGroup]="profileForm" (ngSubmit)="handleSubmit()">
+  <label>
+    nombre del producto
+    <input type="text" formControlName="nombreProducto" />
+  </label>
+  <label>
+    precio del producto
+    <input type="text" formControlName="precioProducto" />
+  </label>
+  <button class="bg-green-400 p-4 rounded-lg">
+    lanzar nombre y precio
+  </button>
+
+</form>
+<br>
+<br>
+<h2 class="font-light text-2xl">Segundo Formulario </h2>
+
+<form [formGroup]="myProfileForm">
+  <!-- <input type="text" formControlName="nameUser" name="nameUser" />
+      <input type="text" formControlName="lastNameUser" name="lastNameUser" />
+      <input type="email" formControlName="emailUser" name="emailUser" /> -->
+  <label>
+    nombre:
+    <input type="text" formControlName="nameUser" />
+  </label>
+    <label>
+    apellido:
+    <input type="text" formControlName="lastNameUser" />
+  </label>
+    <label>
+    email:
+    <input type="email" formControlName="emailUser" />
+  </label>
+  <button type="submit" [disabled]="!profileForm.valid">Subir</button>
+</form>
