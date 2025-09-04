@@ -14,7 +14,7 @@ export class ProductsService {
 
   // Método para obtener todos los productos
   getProducts() { // método público
-    console.log(`desde el service, contenido de productos ${this.products}`)
+    console.log(`desde el service, contenido de productos: ${this.products}`)
     return this.products;
 
   }

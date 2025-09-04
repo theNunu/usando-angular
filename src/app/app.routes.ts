@@ -4,6 +4,7 @@ import { SecondThing } from './second-thing/second-thing.component';
 import { ThirdThing } from './third-thing/third-thing.component';
 import { FourthThing } from './fourth-thing/fourth-thing.component';
 import { ProductsList } from './products-list/products-list.component';
+import { Todos } from './todos/todos.component';
 
 
 export const routes: Routes = [
@@ -26,7 +27,10 @@ export const routes: Routes = [
     {
         path: "productos",
         component: ProductsList
-
+    },
+    {
+        path:"todos",
+        component: Todos
     }
 
 ];

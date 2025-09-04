@@ -1,0 +1,28 @@
+<p>todos works!</p>
+
+<h2>Lista de Tareas</h2>
+
+<div *ngIf="errorMessage" class="error-message">
+  {{ errorMessage }}
+</div>
+
+<ul *ngIf="!errorMessage && todos.length > 0">
+  <li *ngFor="let todo of todos">
+    <span [class.completed]="todo.completed">{{ todo.title }}</span>
+  </li>
+</ul>
+
+<div *ngIf="!errorMessage && todos.length === 0">
+  Cargando tareas...
+</div>
+
+<style>
+  .completed {
+    text-decoration: line-through;
+    color: #999;
+  }
+  .error-message {
+    color: red;
+    font-weight: bold;
+  }
+</style>
