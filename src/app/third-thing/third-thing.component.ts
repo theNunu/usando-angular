@@ -24,7 +24,7 @@ export class ThirdThing {
   }
 
   getCar(id: number) {
-    console.log(`contenido de cars: ${this.cars[id]}`)
+    console.log(`contenido de un car: ${this.cars[id]}`)
     return this.cars[id];
   }
 

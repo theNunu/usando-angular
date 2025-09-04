@@ -3,6 +3,8 @@ import { FirstThing } from './first-thing/first-thing.component';
 import { SecondThing } from './second-thing/second-thing.component';
 import { ThirdThing } from './third-thing/third-thing.component';
 import { FourthThing } from './fourth-thing/fourth-thing.component';
+import { ProductsList } from './products-list/products-list.component';
+
 
 export const routes: Routes = [
     {
@@ -20,6 +22,11 @@ export const routes: Routes = [
     {
         path: "fourth-thing",
         component: FourthThing
+    },
+    {
+        path: "productos",
+        component: ProductsList
+
     }
 
 ];

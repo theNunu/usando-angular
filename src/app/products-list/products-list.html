@@ -1,0 +1,18 @@
+<p>products-list works!</p>
+<h2>Lista de Productos</h2>
+
+<ul>
+  <li *ngFor="let product of products">
+    {{ product.name }} - ${{ product.price }}
+  </li>
+</ul>
+
+<h2 class="font-light text-green-700">voy a hablarte de mis heroes</h2>
+<ul>
+  <li *ngFor="let heroe of myHeroes">
+    {{ heroe.name }} | {{ heroe.apellido }}
+
+  </li>
+</ul>
+
+<p>otro recorrido</p>
